@@ -11,7 +11,6 @@ import {
 import { toast } from "react-toastify";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAL6ZD8d0bmfFSJG6JTtv4WV1FycDDsbTk",
   authDomain: "netmirror-b5808.firebaseapp.com",
   projectId: "netmirror-b5808",
   storageBucket: "netmirror-b5808.firebasestorage.app",
