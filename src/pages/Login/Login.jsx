@@ -50,7 +50,7 @@ const Login = () => {
         </form>
         <div className="form-switch">
           {signState === "Sign In" ? 
-          <p>New to Netmirror? <span onClick={() =>{setSignState("Sign Up")}}>
+          <p>New to Netflix? <span onClick={() =>{setSignState("Sign Up")}}>
              Sign Up Now</span></p> : 
           <p>Already have an account? <span onClick={() =>{setSignState("Sign In")}}>
             Sign In Now</span></p>}

@@ -16,22 +16,16 @@ const Titlecards = ({title, category}) => {
     }
   };
 
-  const handleWheel = (e) => {
-    e.preventDefault();
-    cardsRef.current.scrollLeft += e.deltaY;
-  }
-
   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/movie/${category?category:"now_playing"}?language=en-US&page=1`, options)
     .then(res => res.json())
     .then(res => setApiData(res.results))
     .catch(err => console.error(err));
-    cardsRef.current.addEventListener('wheel', handleWheel)
   },[])
 
   return (
     <div className='titlecards'>
-      <h2>{title ? title : "Popular on Netmirror"}</h2>
+      <h2>{title ? title : "Popular on Netflix"}</h2>
       <div className="card-list" ref={cardsRef}>
         {apiData.map((card, index) => {
           return <Link to={`/player/${card.id}`} className='card' key={index}>

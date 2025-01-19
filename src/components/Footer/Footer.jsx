@@ -28,7 +28,7 @@ const Footer = () => {
         <li>Corporate Information</li>
         <li>Contact Us</li>
       </ul>
-      <p className='copyright-text'>Netmirror. All Rights Reserved.</p>
+      <p className='copyright-text'>Netflix - Made by Pawan.</p>
     </div>
   )
 }
