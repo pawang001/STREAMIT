@@ -11,11 +11,12 @@ import {
 import { toast } from "react-toastify";
 
 const firebaseConfig = {
-  authDomain: "netmirror-b5808.firebaseapp.com",
-  projectId: "netmirror-b5808",
-  storageBucket: "netmirror-b5808.firebasestorage.app",
-  messagingSenderId: "1099159524373",
-  appId: "1:1099159524373:web:eddab875fe13fb8662ea1c"
+    apiKey: "AIzaSyAL6ZD8d0bmfFSJG6JTtv4WV1FycDDsbTk",
+    authDomain: "netmirror-b5808.firebaseapp.com",
+    projectId: "netmirror-b5808",
+    storageBucket: "netmirror-b5808.firebasestorage.app",
+    messagingSenderId: "1099159524373",
+    appId: "1:1099159524373:web:eddab875fe13fb8662ea1c"
 };
 
 const app = initializeApp(firebaseConfig);
